@@ -3,7 +3,7 @@ import { GraduationCap, BookOpen } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 export default function Hero() {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <section
       className="py-24 px-6 md:px-12 lg:px-24 text-center min-h-[95dvh]"
@@ -25,11 +25,17 @@ export default function Hero() {
             <GraduationCap className="w-4 h-4" />
             Academic Profile
           </Button>
-          <Button onClick={()=>{
-            router.push(
-              "https://scholar.google.co.in/citations?user=s-9dTVkAAAAJ&hl=en"
-            );
-          }} variant="outline" className="gap-2">
+          <Button
+            onClick={() => {
+              window.open(
+                "https://scholar.google.co.in/citations?user=s-9dTVkAAAAJ&hl=en",
+                "_blank",
+                "noopener,noreferrer"
+              );
+            }}
+            variant="outline"
+            className="gap-2"
+          >
             <BookOpen className="w-4 h-4" />
             Research Work
           </Button>
