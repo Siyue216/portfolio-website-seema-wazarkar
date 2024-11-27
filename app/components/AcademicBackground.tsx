@@ -4,7 +4,7 @@ export default function AcademicBackground() {
   return (
     <section className="py-24 px-6 md:px-12 lg:px-24 bg-muted/50 min-h-screen " id="teaching">
       <h2 className="text-3xl font-bold mb-12 text-center">
-        Academic Background & Teaching
+        Academic Background {"&"} Teaching
       </h2>
       <div className="grid md:grid-cols-2 gap-6">
         <Card>
@@ -16,7 +16,7 @@ export default function AcademicBackground() {
               <div className="  ">
                 <span className="flex items-center justify-start flex-wrap">
                   <h3 className=" font-bold">
-                    Ph.D in Computer Science & Engineering
+                    Ph.D in Computer Science {"&"} Engineering
                   </h3>
                   <p className="ml-2">| 2015 - 2018</p>
                 </span>
@@ -25,7 +25,7 @@ export default function AcademicBackground() {
               <div className="">
                 <span className="flex items-center justify-start flex-wrap">
                   <h3 className=" font-bold">
-                    M.Tech in Computer Science & Technology
+                    M.Tech in Computer Science {"&"} Technology
                   </h3>
                   <p className="ml-2">| 2012 - 2014</p>
                 </span>
@@ -75,7 +75,7 @@ export default function AcademicBackground() {
                   <p className="ml-2">| June 2019 to June 2020 </p>
                 </span>
                 <h5 className="ml-3">
-                  MIT Arts, Design & Technology University, Pune
+                  MIT Arts, Design {"&"} Technology University, Pune
                 </h5>
               </div>
               <div className="  ">
@@ -90,7 +90,7 @@ export default function AcademicBackground() {
                   <h3 className=" font-bold">Assistant Professor</h3>
                   <p className="ml-2">| July 2014 to May 2015</p>
                 </span>
-                <h5 className="ml-3">KIT's College of Engineering, Kolhapur</h5>
+                <h5 className="ml-3">{"KIT's"} College of Engineering, Kolhapur</h5>
               </div>
               <div className="  ">
                 <span className="flex items-center justify-start">

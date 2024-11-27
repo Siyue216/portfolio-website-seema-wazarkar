@@ -4,7 +4,7 @@ export default function Research() {
   return (
     <section className="py-24 px-6 md:px-12 lg:px-24" id="research">
       <h2 className="text-3xl font-bold mb-12 text-center">
-        Research & Publications
+        Research {"&"} Publications
       </h2>
       <div className="grid md:grid-cols-2 gap-6">
         <Card>
@@ -31,15 +31,13 @@ export default function Research() {
           <CardContent>
             <ul className="list-disc pl-6 space-y-2">
               <li>
-                "Ethical Considerations in AI Decision Making", Nature, 2023
+                Ethical Considerations in AI Decision Making, Nature, 2023
               </li>
+              <li>Advancements in Natural Language Understanding, ACM, 2022</li>
+              <li>Quantum Algorithms for Machine Learning, IEEE, 2021</li>
               <li>
-                "Advancements in Natural Language Understanding", ACM, 2022
-              </li>
-              <li>"Quantum Algorithms for Machine Learning", IEEE, 2021</li>
-              <li>
-                "Deep Learning in Computer Vision: A Comprehensive Review",
-                arXiv, 2020
+                Deep Learning in Computer Vision: A Comprehensive Review, arXiv,
+                2020
               </li>
             </ul>
           </CardContent>
