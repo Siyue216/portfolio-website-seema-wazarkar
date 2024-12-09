@@ -56,7 +56,7 @@ export default function Contact() {
   async function validateFields(formData: z.infer<typeof ContactSchema>) {
     const validatedFields = ContactSchema.safeParse(formData);
     if (!validatedFields.success) {
-      throw new Error("Invalid Input");
+      toast.error("Invalid Input");
     }
 
     return validatedFields.data;

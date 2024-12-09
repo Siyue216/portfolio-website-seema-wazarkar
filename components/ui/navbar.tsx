@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { Menu, X, ChevronDown } from "lucide-react";
-import CV from "./cv";
+import { Button } from "./button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +50,18 @@ const Navbar = () => {
             <MobileNavLink href="teaching">Teaching</MobileNavLink>
             <MobileNavLink href="research">Research</MobileNavLink>
             <MobileNavLink href="contact">Contact</MobileNavLink>
-            <MobileNavLink href="#">CV</MobileNavLink>
+            <div
+              className="text-gray-600 hover:bg-gray-200 cursor-pointer hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
+              onClick={() => {
+                window.open(
+                  "/SeemaWazarkarCV.pdf",
+                  "_blank",
+                  "noopener,noreferrer"
+                );
+              }}
+            >
+              CV
+            </div>
             <MobileNavLink href="projects">Projects</MobileNavLink>
           </div>
         </div>
@@ -115,7 +126,6 @@ const Dropdown = () => {
             aria-orientation="vertical"
             aria-labelledby="options-menu"
           >
-            <CV />
             <Link
               to={"projects"}
               duration={1300}
@@ -124,6 +134,18 @@ const Dropdown = () => {
             >
               Projects
             </Link>
+            <div
+              onClick={() => {
+                window.open(
+                  "/SeemaWazarkarCV.pdf",
+                  "_blank",
+                  "noopener,noreferrer"
+                );
+              }}
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer hover:text-gray-900"
+            >
+              CV
+            </div>
           </div>
         </div>
       )}
